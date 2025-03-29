@@ -5,7 +5,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { RiderCoordinatesModule } from './rider-coordinates/rider-coordinates.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb+srv://dmitrypolyakov:i2XKZ8cp2309@mern-blog.yvkaq.mongodb.net/uber_logs?retryWrites=true&w=majority&appName=mern-blog'), RiderCoordinatesModule],
+  imports: [MongooseModule.forRoot(''), RiderCoordinatesModule],
   controllers: [LoggingController],
   providers: [LoggingService],
 })
